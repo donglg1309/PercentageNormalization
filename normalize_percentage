@@ -1,0 +1,6 @@
+normalize_percentage<-function(x)
+{
+output_matrix<-x
+output_matrix<-as.matrix(x)/rowSums(as.matrix(x))
+return(output_matrix)
+}
